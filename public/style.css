@@ -1,0 +1,152 @@
+.logo {
+    margin: 20px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    margin: 20px;
+    float: right
+}
+
+.intro {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.dp {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+.text {
+    font-size: 30px;
+}
+
+.fa-instagram {
+    background: rgb(193,53,132);
+}
+
+.btn-call {
+    background: white;
+    color: black;
+}
+.btn-whatsapp {
+    background: green;
+    color: white;
+}
+
+.links {
+    text-align: center;
+    padding-top: 40px;
+    
+}
+
+.links1 {
+    background-color: rgb(50, 157, 168);
+    border: none;
+}
+.links2 {
+    align-self:center;
+}
+
+.btn-telegram {
+    background: white;
+    color: blue;
+}
+
+.fa-steam {
+    background: navy;
+    color: white;
+}
+
+.btn-mail {
+    background: white;
+    color: red;
+}
+.content3 {
+    background-color: rgb(50, 157, 168);
+    color: white;
+    height: auto;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+#map {
+    height: 200px;
+    width: 70%;
+    place-items:auto center;
+}
+
+.more {
+    border: none;
+}
+
+.home {
+    height: auto;
+    width: auto;
+}
+.content1 {
+    background-color: rgb(51, 102, 255);
+    color: white;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.content2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.card {
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 40px;
+    color: black;
+    position: center;
+}
+
+.project:hover {
+    transform: scale(1.1);
+}
+
+.project-image {
+    height: 250px;
+    width: 285px;
+}
+
+.skill-image {
+    height: 100px;
+    width: 100px;
+}
+
+.lg {
+    font-size: 40px;
+}
+
+.sm {
+    font-size: 25px;
+}
+.edu {
+    margin-left: 20px;
+    margin-top: 50px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.skill {
+    border: none;
+}
+
+.flip-up {
+    animation-delay: 4s;
+}
