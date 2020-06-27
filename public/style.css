@@ -31,26 +31,31 @@ html {
 
 .fa-instagram {
     background: rgb(193,53,132);
+    margin-left: 0px;
 }
 
 .btn-call {
-    background: white;
+    background: yellow;
+    margin-left:10px;
     color: black;
 }
 .btn-whatsapp {
-    background: green;
+    background: rgb(10,225,10);
+    margin-left: 0px;
     color: white;
 }
 
 .links {
     text-align: center;
     padding-top: 40px;
-    
 }
 
 .links1 {
-    background-color: rgb(50, 157, 168);
+    background-color: rgb(51, 102, 255);
     border: none;
+    width: auto;
+    margin-left: 0px;
+    color: white;
 }
 .links2 {
     align-self:center;
@@ -59,6 +64,7 @@ html {
 
 .btn-telegram {
     background: white;
+    margin-left:  5px;
     color: blue;
 }
 
@@ -68,11 +74,12 @@ html {
 }
 
 .btn-mail {
-    background: white;
-    color: red;
+    background: rgb(200,75,50);
+    margin-left: 0px;
+    color: white;
 }
 .content3 {
-    background-color: rgb(50, 157, 168);
+    background-color: rgb(51, 102, 255);
     color: white;
     height: auto;
     width: 100%;
@@ -121,7 +128,7 @@ html {
 }
 
 .project-image {
-    height: auto;
+    height: 250px;
     width: auto;
 }
 
