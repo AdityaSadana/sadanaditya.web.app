@@ -34,15 +34,16 @@ submitBtn.addEventListener('click', function() {
     let emailidInput = emailid.value;
     let messInput = mess.value;
 
-    console.log("Saving to Firestore " + firstnameInput)
+    console.log("Sending your Message..")
     db.doc(firstnameInput.toString()).set({
         Name: firstnameInput,
-        areacode: areacodeInput,
-        telephone: telnumInput,
-        email: emailidInput,
-        message: messInput
-    }).then(function() {
-        console.log("Data Saved");
+        Areacode: areacodeInput,
+        Telephone: telnumInput,
+        Email: emailidInput,
+        Message: messInput
+    })
+    .then(function(){
+        console.log("Message Sent");
     }).catch(function(error) {
         console.log(error);
     })

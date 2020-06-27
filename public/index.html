@@ -131,7 +131,7 @@
             <p style="font-size: 20px;"><b>~Sundar Pichai</b></p>
         </div>
     </div>
-    <div class="content2">
+    <div class="content2 container">
         <h2>Skills</h2>
         <hr>
         <div class="row">
@@ -203,6 +203,12 @@
             </div>
             <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in">
                 <div class="card skill" style="width: 6rem;" >
+                    <img src="images/jquery-skills.png" class="card-img-top skill-image">
+                    <div class="card-title">JQuery</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in">
+                <div class="card skill" style="width: 6rem;" >
                     <img src="images/git-skills.png" class="card-img-top skill-image">
                     <div class="card-title">Git</div>
                 </div>
@@ -213,7 +219,7 @@
         <p style="padding-top: 50px; font-size: 20px;"> "<em>There is a difference between Studying and Learning. People study to earn grades and I learn to gain knowledge.</em>"</p>
         <p style="font-size: 20px;"><b>~Aditya Sadana</b></p>
     </div>
-    <div class="content2">
+    <div class="content2 container">
         <h2 >Education</h2>
         <hr>
         <div class="edu">
@@ -253,7 +259,11 @@
         </div>
     </div>
     <div class="container">
-        <div class="row row-content">
+        <div class="col-12 col-md-8" id="loader" style="height: auto; width:300px; display:none">
+            <img src="Dual Ring-1s-200px.gif">
+            <h4>Sending your message..</h4>
+        </div>
+        <div class="row row-content" id="mess">
             <div class="col-12" style="margin-top: 50px; text-align: center;">
             <h3>Send me a Message</h3>
             <hr>
@@ -294,10 +304,10 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-md">
-            </div>
         </div>
+        
     </div>
+    
     <div class="content3" id="getintouch">
         <div class="row">
             <div class="col-12 col-md-6 links">
@@ -325,6 +335,7 @@
             </div>
         </div>
     </div>
+    
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -349,7 +360,7 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="/__/firebase/7.15.4/firebase-analytics.js"></script>
-
+<script src="http://code.jquery.com/jquery.js"></script>
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
@@ -360,6 +371,30 @@
 <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="module" src="app.js"></script>
+
+<script>
+    var spinner=$('#loader');
+    var mess=$("#mess");
+    $(function() {
+        $('#message_form').submit(function(e) {
+            e.preventDefault();
+            mess.hide();
+            spinner.show();;
+            setTimeout(function(){
+            spinner.hide();
+            mess.show();
+            }, 3000);
+            setTimeout(function() {
+                alert("Your Message has been Sent.");
+            }, 3500);
+        });
+    });
+    $(function() {
+        $("#message_form").submit(function(e) {
+            this.reset();
+        });
+    });
+</script>
 </body>
 
 </html> 
