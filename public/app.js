@@ -44,7 +44,9 @@ submitBtn.addEventListener('click', function() {
     })
     .then(function(){
         console.log("Message Sent");
+        setTimeout(function() {alert("Message Sent")}, 3200);
     }).catch(function(error) {
         console.log(error);
+        alert("There was an error sending the message.");
     })
 });
