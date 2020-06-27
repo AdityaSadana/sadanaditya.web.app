@@ -121,24 +121,23 @@ html {
 }
 
 .project-image {
-    height: 250px;
-    width: 285px;
+    height: auto;
+    width: auto;
 }
 
 .skill-image {
-    height: 100px;
-    width: 100px;
+    height: auto;
+    width: auto;
 }
 
 .lg {
-    font-size: 40px;
+    font-size: 20%;
 }
 
 .sm {
     font-size: 25px;
 }
 .edu {
-    margin-left: 20px;
     margin-top: 50px;
     text-align: left;
     margin-bottom: 30px;
