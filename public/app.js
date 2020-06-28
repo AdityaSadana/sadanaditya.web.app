@@ -1,5 +1,3 @@
-
-
 var firebaseConfig = {
     apiKey: "AIzaSyB2Ei6mFiCfIM57p0DUrJjpm652FXuNkNk",
     authDomain: "my-website-8b344.firebaseapp.com",
@@ -47,6 +45,6 @@ submitBtn.addEventListener('click', function() {
         setTimeout(function() {alert("Message Sent")}, 3200);
     }).catch(function(error) {
         console.log(error);
-        alert("There was an error sending the message.");
     })
 });
+
