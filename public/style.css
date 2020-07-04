@@ -7,6 +7,8 @@
 
 html {
     scroll-behavior: smooth;
+    min-width: 175px;
+    max-width: 2000px;
 }
 
 .btn {

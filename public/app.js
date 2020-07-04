@@ -47,4 +47,3 @@ submitBtn.addEventListener('click', function() {
         console.log(error);
     })
 });
-
