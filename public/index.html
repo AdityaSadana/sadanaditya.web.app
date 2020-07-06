@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="overflow-x: hidden; overflow-y: scroll; max-width: 100vw;">
+<html lang="en" style="overflow-x: hidden; overflow-y: scroll; max-width: 100vw; ">
 
 <head>
     <title>Aditya Sadana</title>
@@ -15,17 +15,25 @@
     <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
     <div class="container" data-aos="fade-right">
         <div>
-                <img src="images/images.png" class="logo">
-                <a href="Resume.pdf"><button class="btn btn-primary">View my Resume</button></a>
+            <img src="images/images.png" class="logo">
+            <div class="row" style="float: right; margin-top: 40px; margin-right: 0px;">
+                <div class="col-3">
+                <label class="switch" style="align-self: center;">
+                    <input type="checkbox" id="dark">
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+                  <div class="col-8" style="margin-left: 10px;">Dark Mode</div>
+            </div>
         </div>
         <div class="intro">
             <h1> Hello, Folks! </h1>
             <img src="images/img.jpg" class="img-fluid dp" ><br>
             <p class="text"><span class="fa fa-star"></span> Programmer  <span class="fa fa-star"></span> Developer  <span class="fa fa-star"></span> Peripathetic</p>
-            <img src="images/home.jpg" class="home img-fluid">
+            <img src="images/home.png" class="home img-fluid">
         </div>
     </div>
 
@@ -34,7 +42,7 @@
          <p style="font-size: 20px;">An UnderGraduate Student at Indian Institute of Information Technology(IIIT), Pune </p>
     </div>
 
-    <div class="content2 container">
+    <div class="content2 container" style="margin-bottom: 100px;">
         <h2>About Me</h2>
         <hr>
         <div class="row">
@@ -49,7 +57,7 @@
                 <img src="images/about.jpg" style="border-radius: 50%; filter: brightness(0.8); align-self: center; margin-top: 30px;;" class="img-fluid" data-aos="zoom-in" data-aos-duration="2000">
             </div>
             <div class=" card col-12 col-lg-3" style="border: none; margin-left: 0px;" data-aos="zoom-in" data-aos-duration="1500">
-                <img src="images/interests.png" class="card-img-top img-fluid" style="width:110px; height: 100px; align-self: center;">
+                <img src="images/interest.png" class="card-img-top img-fluid" style="width:110px; height: 100px; align-self: center;">
                 <div class="card-body">
                     <h4 class="card-title">Other Interests</h4>
                 <p>I have interests in fields such as Image Processing & OpenCV, Neural Networks & Deep Learning and Ethical Hacking.</p>
@@ -94,6 +102,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div style="position: absolute; margin-left: 30%;">
+            <a href="Resume.pdf"><button class="btn btn-primary">View my Resume</button></a>
         </div>
     </div>
 
@@ -242,80 +253,86 @@
         <div class="row">
             <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in"  data-aos-duration="1500">
                 <div class="card skill" style="width: auto;" >
-                    <img src="images/python-skills.png" class="card-img-top skill-image img-fluid">
+                    <img src="images/python-skills.png" class="card-img-top skill-image img-fluid" id="python">
                     <div class="card-title">Python</div>
                 </div>
             </div>
             <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="card skill" style="width: auto;" >
-                    <img src="images/angular-skills.png" class="card-img-top skill-image img-fluid">
+                    <img src="images/angular-skills.png" class="card-img-top skill-image img-fluid" id="angular">
                     <div class="card-title">Angular</div>
                 </div>
             </div>
             <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="card skill" style="width: auto;" >
-                    <img src="images/javascript-skils.png" class="card-img-top skill-image img-fluid">
+                    <img src="images/javascript-skils.png" class="card-img-top skill-image img-fluid" id="javascript">
                     <div class="card-title">Javascript</div>
                 </div>
             </div>
             <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="card skill" style="width: auto;" >
-                    <img src="images/nodejs-skills.png" class="card-img-top skill-image img-fluid">
+                    <img src="images/nodejs-skills.png" class="card-img-top skill-image img-fluid" id="nodejs">
                     <div class="card-title">NodeJs</div>
                 </div>
             </div>
             <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="card skill" style="width: auto;" >
-                    <img src="images/mongodb-skills.png" class="card-img-top skill-image img-fluid">
+                    <img src="images/mongodb-skills.png" class="card-img-top skill-image img-fluid" id="mongo">
                     <div class="card-title">MongoDB</div>
                 </div>
             </div>
             <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="card skill" style="width: auto;" >
-                    <img src="images/mysql-skills.png" class="card-img-top skill-image img-fluid">
+                    <img src="images/mysql-skills.png" class="card-img-top skill-image img-fluid" id="mysql">
                     <div class="card-title">MySQL</div>
                 </div>
             </div>
             <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="card skill" style="width: auto;" >
-                    <img src="images/opencv-skills.png" class="card-img-top skill-image img-fluid">
+                    <img src="images/opencv-skills.png" class="card-img-top skill-image img-fluid" id="cv">
                     <div class="card-title">OpenCV</div>
                 </div>
             </div>
             <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="card skill" style="width: auto;" >
-                    <img src="images/bootstrap-skills.png" class="card-img-top skill-image img-fluid">
+                    <img src="images/bootstrap-skills.png" class="card-img-top skill-image img-fluid" id="boot">
                     <div class="card-title">Bootstrap4</div>
                 </div>
             </div>
             <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="card skill" style="width: auto;" >
-                    <img src="images/ionic-skills.png" class="card-img-top skill-image img-fluid">
+                    <img src="images/ionic-skills.png" class="card-img-top skill-image img-fluid" id="ionic">
                     <div class="card-title">Ionic</div>
                 </div>
             </div>
             <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="card skill" style="width: auto;" >
-                    <img src="images/html-skills.png" class="card-img-top skill-image img-fluid">
+                    <img src="images/html-skills.png" class="card-img-top skill-image img-fluid" id="html">
                     <div class="card-title">HTML5</div>
                 </div>
             </div>
             <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="card skill" style="width: auto;" >
-                    <img src="images/css-skill.png" class="card-img-top skill-image img-fluid">
+                    <img src="images/css-skill.png" class="card-img-top skill-image img-fluid" id="css">
                     <div class="card-title">CSS3</div>
                 </div>
             </div>
             <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="card skill" style="width: auto;" >
-                    <img src="images/jquery-skills.png" class="card-img-top skill-image img-fluid">
+                    <img src="images/jquery-skills.png" class="card-img-top skill-image img-fluid" id="jquery">
                     <div class="card-title">JQuery</div>
                 </div>
             </div>
             <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="card skill" style="width: auto;" >
-                    <img src="images/git-skills.png" class="card-img-top skill-image img-fluid">
+                    <img src="images/git-skills.png" class="card-img-top skill-image img-fluid" id="git">
                     <div class="card-title">Git</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="card skill" style="width: auto;" >
+                    <img src="images/visual-skills.png" class="card-img-top skill-image img-fluid" id="visual">
+                    <div class="card-title">Visual Studio</div>
                 </div>
             </div>
         </div>
@@ -500,34 +517,9 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="module" src="app.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 
-<script>
-    var spinner=$('#loader');
-    var mess=$("#mess");
-    $(function() {
-        $('#message_form').submit(function(e) {
-            e.preventDefault();
-            mess.hide();
-            spinner.show();;
-            setTimeout(function(){
-            spinner.hide();
-            mess.show();
-            }, 3000);
-        });
-    });
-    $(function() {
-        $("#message_form").submit(function(e) {
-            this.reset();
-        });
-    });
-</script>
-
-<script>
-    $(".nav-link").click(function() {
-        $(".nav-link").removeClass("active");
-        $(this).addClass("active");
-    })
-</script>
+<script src="dark-mode.js"></script>
 
 </body>
 

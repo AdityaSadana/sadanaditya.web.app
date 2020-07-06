@@ -24,6 +24,8 @@ let emailid = document.querySelector('#emailid');
 let mess = document.querySelector('#message');
 
 const db = firestore.collection("messages");
+const form = document.getElementById("#message_form");
+
 
 submitBtn.addEventListener('click', function() {
     let firstnameInput = firstname.value;
@@ -32,18 +34,23 @@ submitBtn.addEventListener('click', function() {
     let emailidInput = emailid.value;
     let messInput = mess.value;
 
-    console.log("Sending your Message..")
-    db.doc(firstnameInput.toString()).set({
-        Name: firstnameInput,
-        Areacode: areacodeInput,
-        Telephone: telnumInput,
-        Email: emailidInput,
-        Message: messInput
-    })
-    .then(function(){
-        console.log("Message Sent");
-        setTimeout(function() {alert("Message Sent")}, 3200);
-    }).catch(function(error) {
-        console.log(error);
-    })
+    if(firstnameInput!=""&&areacodeInput!=""&&telnumInput!=""&&emailidInput!=""&&messInput!="") {
+        console.log("Sending your Message..")
+        db.doc(firstnameInput.toString()).set({
+            Name: firstnameInput,
+            Areacode: areacodeInput,
+            Telephone: telnumInput,
+            Email: emailidInput,
+            Message: messInput
+        })
+        .then(function(){
+            console.log("Message Sent");
+            setTimeout(function() {alert("Message Sent")}, 3200);
+        }).catch(function(error) {
+            console.log(error);
+        })
+    }
 });
+
+
+
