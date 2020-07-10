@@ -2,7 +2,7 @@ $("#dark").click(function() {
         if ($("body").hasClass("body")){
             $("body").addClass("body1");
             $("body").removeClass("body");
-            $(".card").css("background","black");
+            $(".card").css("background-color","black");
             $(".card").css("color","white");
             $(".links1").css("background","rgb(51, 102, 255)");
             $("#javascript").attr('src','images/javascript-dark.png');
@@ -21,6 +21,12 @@ $("#dark").click(function() {
             $("#cv").attr('src','images/opencv-dark.png');
             $("#jquery").attr('src','images/jquery-dark.png');
             $("#html").attr('src','images/html-dark.png');
+            $(".project").on("mouseover", function() {
+                $(this).css("background","rgb(51, 102, 255)");
+            })
+            $(".project").on("mouseout", function() {
+                $(this).css("background","#000");
+            })
         }
         else {
             $("body").addClass("body");
@@ -44,5 +50,11 @@ $("#dark").click(function() {
             $("#cv").attr('src','images/opencv-skills.png');
             $("#jquery").attr('src','images/jquery-skills.png');
             $("#html").attr('src','images/html-skills.png');
+            $(".project").on("mouseover", function() {
+                $(this).css("background","rgb(51, 102, 255)");
+            })
+            $(".project").on("mouseout", function() {
+                $(this).css("background","#fff");
+            })
         }
     })
