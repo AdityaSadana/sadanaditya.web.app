@@ -2,6 +2,9 @@ $("#dark").click(function() {
         if ($("body").hasClass("body")){
             $("body").addClass("body1");
             $("body").removeClass("body");
+            $("#dark").html("Dark Mode");
+            $("#dark").css("background-color","rgb(50,50,50)");
+            $("#dark").css("color","white");
             $(".card").css("background-color","black");
             $(".card").css("color","white");
             $(".links1").css("background","rgb(51, 102, 255)");
@@ -31,6 +34,9 @@ $("#dark").click(function() {
         else {
             $("body").addClass("body");
             $("body").removeClass("body1");
+            $("#dark").html("Light Mode");
+            $("#dark").css("background-color","rgb(200,200,200)");
+            $("#dark").css("color","black");
             $(".card").css("background","white");
             $(".card").css("color","black");
             $(".links1").css("background","rgb(51, 102, 255)");
