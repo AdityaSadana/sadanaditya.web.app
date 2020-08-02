@@ -16,18 +16,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 
-<body class="body">
+<body class="body" onscroll="scroller()">
+    <div id="load">
+        <div id="loader"></div>
+        <div id="percent">Loading~ <br>1%</div>
+    </div>
+    <div id="content" style="display: none;">
     <div id="progressbar"></div>
     <div id="scrollPath"></div>
-    <div class="container" data-aos="fade-right">
+    <div class="container" data-aos="fade-right" data-aos-duration="2000">
         <div>
             <img src="images/images.png" class="logo">
             <button class="btn mode" id="dark"> Light Mode</button>
+            
         </div>
         <div class="intro">
             <h1> Hello, Folks! </h1>
@@ -511,6 +517,7 @@
         <h6 style="text-align: center; margin-top: 40px;"> Created with<img src="images/heart.png" style="width: 35px; height: 20px;">by Aditya Sadana </h6>
         
     </div>
+</div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -531,7 +538,11 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
 <script type="module" src="app.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="index.js"></script>
