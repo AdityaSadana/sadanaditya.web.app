@@ -51,6 +51,3 @@ submitBtn.addEventListener('click', function() {
         })
     }
 });
-
-
-
