@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: sadanaditya.web.app
+Token: 82f94f219f095b3069d94c29803ff08f660f96e10d1eb4c784d9ab4acd91eb9c
