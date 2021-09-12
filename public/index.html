@@ -14,6 +14,7 @@
     <meta property="og:image" content="images/Aditya.jpg" />
     <meta property="og:description" content="Meet a Full Stack Web Application Developer from India... Other interests include Image Processing, Ethical Hacking and Machine Learning" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
@@ -24,7 +25,7 @@
 <body class="body" onscroll="scroller()">
     <div id="load">
         <div id="loader"></div>
-        <div id="percent">Loading~ <br>1%</div>
+        <div id="percent">Loading <br>1%</div>
     </div>
     <div id="content" style="display: none;">
     <div id="progressbar"></div>
@@ -56,7 +57,7 @@
                 <img src="images/face.png" class="card-img-top img-fluid" style="width:110px; height: 100px; align-self: center;"> 
                 <div class="card-body">
                     <h4 class="card-title">Who am I?</h4>
-                    <p>I am a Full Stack Web Application Developer. I can develop applications that can work on platforms such as Windows, Android and IOS with my <a href="#skills">skills</a>.</p>
+                    <p>I am a Software Developer. I can build AI/ML models that would generate predictions according to organization's needs and deploy them at the Backend.</p>
                 </div>
             </div>
             <div class="col-11 col-lg-5">
@@ -66,7 +67,7 @@
                 <img src="images/interest.png" class="card-img-top img-fluid" style="width:110px; height: 100px; align-self: center;">
                 <div class="card-body">
                     <h4 class="card-title">Other Interests</h4>
-                <p>I have interests in fields such as Image Processing & OpenCV, Neural Networks & Deep Learning and Ethical Hacking.</p>
+                <p>I have interests in fields such as Full Stack Application Development, Image Processing & Computer Vision, and Ethical Hacking.</p>
                 </div>
             </div>
         </div>
@@ -123,20 +124,20 @@
         <h2>Personal Projects</h2>
         <ul class="nav nav-pills mb-1" id="pills-tab" role="tablist" style="border: 1px solid blue; margin-top: 50px; ">
             <li class="nav-item col-12 col-md-6 col-lg-3">
-                <a class="nav-link active" data-toggle="pill" href="#web" role="tab">Web Apps</a>
+                <a class="nav-link active" data-toggle="pill" href="#machine" role="tab">Machine Learning</a>
+            </li>
+            <li class="nav-item col-12 col-md-6 col-lg-3">
+                <a class="nav-link" data-toggle="pill" href="#web" role="tab">Web Apps</a>
             </li>
             <li class="nav-item col-12 col-md-6 col-lg-3">
                 <a class="nav-link" data-toggle="pill" href="#opencv" role="tab">Image Processing</a>
-            </li>
-            <li class="nav-item col-12 col-md-6 col-lg-3">
-                <a class="nav-link" data-toggle="pill" href="#machine" role="tab">Machine Learning</a>
             </li>
             <li class="nav-item col-12 col-md-6 col-lg-3">
                 <a class="nav-link" data-toggle="pill" href="#programs" role="tab">Security & Hacking</a>
             </li>
         </ul>
         <div class="tab-content" style="border: 1px solid blue;">
-            <div class="tab-pane show active" id="web" role="tabpanel" style="margin-bottom: 30px">
+            <div class="tab-pane" id="web" role="tabpanel" style="margin-bottom: 30px">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="1000">
                         <a href="https://movie-destination.web.app" target="_blank">
@@ -207,7 +208,7 @@
                     
                 </div>
             </div>
-            <div class="tab-pane show" id="opencv" role="tabpanel" style="margin-bottom: 30px">
+            <div class="tab-pane" id="opencv" role="tabpanel" style="margin-bottom: 30px">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="1000">
                         <a href="https://github.com/AdityaSadana/Object-Detection" target="_blank">
@@ -247,9 +248,9 @@
                 </div>
             </div>
 
-            <div class="tab-pane" id="machine" role="tabpanel" style="margin-bottom: 30px">
+            <div class="tab-pane show active" id="machine" role="tabpanel" style="margin-bottom: 30px">
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="4000">
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="1000">
                         <a href="https://github.com/AdityaSadana/Chatbot" target="_blank">
                         <div class="card project" style="width: auto" >
                             <img src="images/chatbot.png" class="card-img-top project-image img-fluid" style="height: 200px;">
@@ -260,8 +261,7 @@
                         </div>
                         </a>
                     </div>
-                   
-                    <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="1000">
                         <a href="https://github.com/AdityaSadana/Recommender-System" target="_blank">
                         <div class="card project" style="width: auto" >
                             <img src="images/recommender.jpg" class="card-img-top project-image img-fluid" style="height: 200px;">
@@ -272,12 +272,45 @@
                         </div>
                         </a>
                     </div>
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="1000">
+                        <a href="https://github.com/AdityaSadana/Sentiment-Analysis" target="_blank">
+                        <div class="card project" style="width: auto" >
+                            <img src="images/sentiment.jpg" class="card-img-top project-image img-fluid" style="height: 200px;">
+                            <div class="card-body">
+                                <h6 class="card-title">Sentiment Analysis</h6>
+                                <p>Identify the sentiment (Positive or Negative) of a statement.</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="1000">
+                        <a href="https://github.com/AdityaSadana/Spam-Email-Detection" target="_blank">
+                        <div class="card project" style="width: auto" >
+                            <img src="images/spam.png" class="card-img-top project-image img-fluid" style="height: 200px;">
+                            <div class="card-body">
+                                <h6 class="card-title">Spam Email Detection</h6>
+                                <p>Identify text as spam or non-spam.</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="1000">
+                        <a href="https://github.com/AdityaSadana/Handwritten-Digit-Recognition" target="_blank">
+                        <div class="card project" style="width: auto" >
+                            <img src="images/digit.jpg" class="card-img-top project-image img-fluid" style="height: 200px;">
+                            <div class="card-body">
+                                <h6 class="card-title">Handwritten Digit Recognition</h6>
+                                <p>Identify text as spam or non-spam.</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="tab-pane" id="programs" role="tabpanel" style="margin-bottom: 30px">
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="6000">
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="1000">
                         <a href="https://github.com/AdityaSadana/Key-Logger" target="_blank">
                         <div class="card project" style="width: auto" >
                             <img src="images/keylogger1.jpg" class="card-img-top project-image img-fluid" style="height: 200px;">
@@ -288,7 +321,7 @@
                         </div>
                     </a>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="4000">
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="1000">
                         <a href="https://github.com/AdityaSadana/Wifi-password-stealer" target="_blank">
                         <div class="card project" style="width: auto" >
                             <img src="images/wifi.jpg" class="card-img-top project-image img-fluid" style="height: 200px;">
@@ -299,7 +332,7 @@
                         </div>
                     </a>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="4000">
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4" data-aos="fade-right" data-aos-duration="1000">
                         <a href="https://github.com/AdityaSadana/Data-encryption-and-decryption" target="_blank">
                         <div class="card project" style="width: auto" >
                             <img src="images/encrypt.jpg" class="card-img-top project-image img-fluid" style="height: 200px;">
@@ -546,16 +579,16 @@
             <h3 style="margin-bottom: 30px;">Contact Me via: </h3>
             <div style="display: flex; justify-content: center;" class="row">
                 <a class="btn btn-call col-4 col-md-2 col-xl-1"  href="tel:+91-7354130570"><i class="fa fa-phone"></i> Call</a>
-                <a class="btn btn-whatsapp col-4 col-md-2 col-xl-1" href="https://wa.me/919179800899"><i class="fa fa-whatsapp"></i> Whatsapp</a>
-                <a class="btn btn-telegram col-4 col-md-2 col-xl-1" href="https://t.me/adityasadana"><i class="fa fa-telegram"></i> Telegram</a>
+                <a class="btn btn-whatsapp col-4 col-md-2 col-xl-1" href="https://wa.me/919179800899" target="_blank"><i class="fa fa-whatsapp"></i> Whatsapp</a>
+                <a class="btn btn-telegram col-4 col-md-2 col-xl-1" href="https://t.me/adityasadana" target="_blank"><i class="fa fa-telegram"></i> Telegram</a>
                 <a class="btn btn-mail col-4 col-md-2 col-xl-1" href="mailto:sadanditya@gmail.com"><i class="fa fa-envelope-o"></i> Email</a>
             </div>
             <div style="display: flex; justify-content: center;">
-                <a class="btn btn-social-icon btn-facebook btn1" href="https://www.facebook.com/aditya.sadana.9"><i class="fa fa-facebook"></i></a>
-                <a class="btn btn-social-icon btn-twitter btn1" href="https://twitter.com/Aditya95228046"><i class="fa fa-twitter"></i></a>
-                <a class="btn btn-social-icon btn-instagram btn1" href="https://www.instagram.com/_aditya_sadana_/"><i class="fa fa-instagram"></i></a>
-                <a class="btn btn-social-icon btn-github btn1" href="https://github.com/AdityaSadana"><i class="fa fa-github"></i></a>
-                <a class="btn btn-social-icon btn-steam btn1" href="https://steamcommunity.com/profiles/76561198900798702/"><i class="fa fa-steam"></i></a>
+                <a class="btn btn-social-icon btn-github btn1" href="https://github.com/AdityaSadana" target="_blank"><i class="fa fa-github"></i></a>
+                <a class="btn btn-social-icon btn-facebook btn1" href="https://www.facebook.com/aditya.sadana.9" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-linkedin btn1" href="https://linkedin.com/in/aditya-sadana" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a class="btn btn-social-icon btn-instagram btn1" href="https://www.instagram.com/_aditya_sadana_/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-discord btn1" href="https://discord.com/channels/@me/510127444494254092" target="_blank"><i class="fab fa-discord"></i></a>
             </div>
         </div>
         

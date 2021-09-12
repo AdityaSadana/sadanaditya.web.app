@@ -22,6 +22,7 @@ let areacode = document.querySelector('#areacode');
 let telnum = document.querySelector('#telnum');
 let emailid = document.querySelector('#emailid');
 let mess = document.querySelector('#message');
+let time = new Date();
 
 const db = firestore.collection("messages");
 const form = document.getElementById("#message_form");
@@ -33,6 +34,7 @@ submitBtn.addEventListener('click', function() {
     let telnumInput = telnum.value;
     let emailidInput = emailid.value;
     let messInput = mess.value;
+    let date = time;
 
     if(firstnameInput!=""&&areacodeInput!=""&&telnumInput!=""&&emailidInput!=""&&messInput!="") {
         console.log("Sending your Message..")
@@ -41,7 +43,8 @@ submitBtn.addEventListener('click', function() {
             Areacode: areacodeInput,
             Telephone: telnumInput,
             Email: emailidInput,
-            Message: messInput
+            Message: messInput,
+            Date: date
         })
         .then(function(){
             console.log("Message Sent");
