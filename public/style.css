@@ -112,7 +112,6 @@ html {
   margin-top:22px;
     margin-bottom: 4px;
     padding:0;
-    color: #b3b3b3;
 }
 
 .timeline .timeline-heading h4.subheading {
@@ -120,13 +119,11 @@ html {
   padding:0;
     text-transform: none;
     font-size:18px;
-    color:#333333;
 }
 
 .timeline .timeline-body>p,
 .timeline .timeline-body>ul {
     margin-bottom: 0;
-    color:#808080;
 }
 /*Style for even div.line*/
 .timeline>li:nth-child(odd) .line:before {
